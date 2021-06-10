@@ -1,0 +1,21 @@
+# kivy: 2.0.0
+
+<CustomDropdown>:
+    id_other_dropdown : id_other_dropdown
+    id: id_other_dropdown
+    Button:     
+        text:'my first item'
+        size_hint_y:None
+        height:44
+        on_release: root.select('item1')
+    Label:
+        text: 'unselect item'
+        size_hint_y:None
+        height:44
+    Button:
+        text:'my second item'
+        size_hint_y:None
+        height:44
+        on_release: root.select('item2')
+    
+

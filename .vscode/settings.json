@@ -1,4 +1,5 @@
 {
     "python.pythonPath": "D:\\Python3.9.4\\Install\\python.exe",
-    "editor.fontSize": 22
+    "editor.fontSize": 22,
+    "python.analysis.extraPaths": ["C:\\Users\\Chamico\\Desktop\\StockAnalyze"],
 }

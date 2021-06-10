@@ -1,0 +1,24 @@
+#:include other.kv
+<RecommendScreen>:
+    BoxLayout:
+        oretation: 'horizontal'
+        Button:
+            text: 'check'
+            size_hint: .45, None # 这里要先设置，之后下面的size设置才能有效
+            size: 0, 44          # 0 无效值，实际的宽度为 hint值
+            pos_hint: {'top': 1}
+            on_press: root.manager.current = 'check'
+        Button:
+            text: 'recommend'
+            size_hint: .45, None # 这里要先设置，之后下面的size设置才能有效
+            size: 0, 44          # 0 无效值，实际的宽度为 hint值
+            pos_hint: {'top': 1}
+            on_press: root.manager.current = 'recommend'
+        Button:
+            text: ':'
+            size_hint: .1, None  # 这里要先设置，之后下面的size设置才能有效
+            size: 0, 44          # 0 无效值，实际的宽度为 hint值
+            pos_hint: {'top': 1}
+
+    Label:
+        text:'recommend'
